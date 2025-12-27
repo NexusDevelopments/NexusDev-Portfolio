@@ -4,9 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NexusDev — Portfolio</title>
+    <link rel="stylesheet" href="src/styles.css">
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <header class="header">
+      <div class="brand">
+        <h1>NexusDev</h1>
+        <p class="tag">Web developer</p>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section id="about" class="about">
+        <h2>About NexusDev</h2>
+        <p>
+          Hi — I'm NexusDev. I build focused, accessible web experiences
+          using modern tools.
+        </p>
+      </section>
+
+      <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <article class="card">
+            <div>
+              <h3>Clockwatch</h3>
+              <p>A sleek time-tracking web app with a clean UI.</p>
+            </div>
+            <div class="card-actions">
+              <a class="btn" href="https://clockwatch.vercel.app" target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>Made by NexusDev · Built with React</p>
+      </footer>
+    </main>
+
   </body>
 </html>
