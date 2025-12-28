@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 
-// Set the base to the repository name so built assets work on GitHub Pages
+// Use root base so the site works when deployed to Vercel or the site root
 export default defineConfig({
-  base: '/NexusDev-Portfolio/'
+  base: '/'
 })
